@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <!-- Region Content -->
+        <Grid Name="ImageHolder" />
+        <!-- EndRegion -->
         
+        <!-- Region UI -->
+        <Grid Name="UI" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="250">
+            <Button Click="Button_Click" />
+        </Grid>
+        <!-- Endregion -->
     </Grid>
 </Window>
