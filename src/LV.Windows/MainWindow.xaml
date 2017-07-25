@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LV.Windows"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow"
+        KeyUp="Window_KeyUp"
+        Height="350" Width="525">
     <Grid>
         <!-- Region Content -->
         <Grid Name="ImageHolder" />

@@ -64,5 +64,30 @@ namespace VWS.LV.Windows
                 Panel.SetZIndex(Images[1], 2);
             }
         }
+
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            int index = -1;
+            switch (e.Key)
+            {
+                case Key.NumPad1:
+                case Key.D1:
+                    index = 0;
+                    break;
+                case Key.NumPad2:
+                case Key.D2:
+                    index = 1;
+                    break;
+            }
+
+            if (index >= 0)
+            {
+                for (int i=0; i< Images.Count; i++)
+                {
+                    if (i == index) { Panel.SetZIndex(Images[i], Images.Count); }
+                    else { Panel.SetZIndex(Images[i], i); }
+                }
+            }
+        }
     }
 }
